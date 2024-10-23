@@ -1,0 +1,164 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/img17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* foto */
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.upload-overlay {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.upload-overlay:hover {
+    opacity: 1;
+}
+
+.upload-label {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.upload-label i {
+    font-size: 30px; /* Icon size */
+}
+
+
+
+.file-upload {
+    display: none; /* Hide the file input */
+}
+
+
+
+
+
+
+
+
+.profile-card {
+    background: radial-gradient(circle, rgba(241, 201, 140, 0.726) 0%, rgba(255, 134, 134, 0.719) 100%);   
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    animation: pulse 2s infinite;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+
+
+.info-group {
+    text-align: left;
+}
+
+.info-group label {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.info-group input {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+}
+
+.info-group input[type="text"],  
+.info-group input[type="email"],
+.info-group input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.info-group input[type="text"]:focus, 
+.info-group input[type="email"]:focus,
+.info-group input[type="password"]:focus {
+    border-bottom: 1px solid #ffffff;
+}
+
+
+
+.edit-btn {
+    background: linear-gradient(90deg, #00000075, #626362c7);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: linear-gradient(90deg, #626362c7, #00000075);
+    transform: scale(1.05);
+}
+
+.btn-menu {
+    background: linear-gradient(90deg, #00000075, #626362c7);
+    text-decoration: none; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-menu:hover {
+    background: linear-gradient(90deg, #626362c7, #00000075);
+    transform: scale(1.05);
+}
+
+
+
